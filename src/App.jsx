@@ -1,5 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Router from "./pages";
 
-const App = () => <div>Welcome to React</div>;
+const App = () => (
+  <Fragment>
+    <Router />
+  </Fragment>
+);
 
 export default App;
