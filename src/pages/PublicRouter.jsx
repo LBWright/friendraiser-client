@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
-import { Route } from "react-router-dom";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 import { Home } from "./public";
 
 const PublicRoutes = () => (
-  <Fragment>
+  <Switch>
     <Route exact path="/" component={Home} />
-  </Fragment>
+  </Switch>
 );
 
 export default PublicRoutes;

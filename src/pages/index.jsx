@@ -1,16 +1,16 @@
 // router
 
-import React from "react";
-import { BrowserRouter, Switch } from "react-router-dom";
+import React, { Fragment } from "react";
+import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./AppRouter";
 import PublicRouter from "./PublicRouter";
 
 const Router = () => (
   <BrowserRouter>
-    <Switch>
-      <PublicRouter />
+    <Fragment>
       <AppRouter />
-    </Switch>
+      <PublicRouter />
+    </Fragment>
   </BrowserRouter>
 );
 
